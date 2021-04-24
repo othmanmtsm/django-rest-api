@@ -10,7 +10,7 @@ class Room(models.Model):
 class Reservation(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     room = models.ForeignKey(Room, on_delete=models.CASCADE)
-    checkinDate = models.DateField()
+    checkinDate = models.DateField(auto_now_add= True)
     checkoutDate = models.DateField()
 
 class RoomImages(models.Model):
