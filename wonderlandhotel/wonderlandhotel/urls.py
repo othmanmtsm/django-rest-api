@@ -22,4 +22,5 @@ urlpatterns = [
     path('api/rooms', views.RoomList.as_view()),
     path('api/rooms/<int:pk>/reserve', views.ReservationCreate.as_view()),
     path('api/signup', views.signup),
+    path('api/login', views.login),
 ]
